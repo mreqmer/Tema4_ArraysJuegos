@@ -10,8 +10,6 @@ public class Main01 {
 		LaMosca juegoMosca;
 		juegoMosca = new LaMosca();
 		// var
-		// guarda la posición de la mosca para comprobaciones del programa
-		int posicionMosca;
 		// guarda el input de movimiento del jugador
 		int movJugador;
 		// guarda los códigos de error del mov del jugador
@@ -42,10 +40,9 @@ public class Main01 {
 			// muestra el tablero
 			juegoMosca.pintaTablero();
 			do {
-//				// se guarda la posición de la mosca a modo de comprobación del probación del
-//				// programa
+				
+//				int posicionMosca;
 //				posicionMosca = LaMosca.posMosca;
-//				// muestra la posición de la mosca para comprobación del programa
 //				System.out.println(posicionMosca);
 
 				// bucle encargado de preguntar al jugador la posición hasta que introduzca una
@@ -79,6 +76,7 @@ public class Main01 {
 			System.out.println("¡¡¡HAS GANADO!!!");
 			System.out.println("¿Quieres volver a jugar? S/N");
 			repetir = sc.next();
+			//se pasa a minusculas el resultado para evitar errores
 			repetirMin = repetir.toLowerCase();
 
 		} while (repetirMin.equals("s"));
